@@ -19,11 +19,18 @@ body {
   padding: 20px 40px;
 }
 
-nav a {
+nav {
+  font-size: 18px;
+  text-align: center;
+}
+
+nav a:link {
   /* a属于inline元素，水平设置有效果，就是left和right，top和bottom无效果 */
   /* margin-top: 20px;  无效果 */
   /* margin-bottom: 20px; 无效果 */
   margin-right: 20px;
+  margin-top: 10px;
+  display: inline-block;
 }
 
 article {
@@ -53,6 +60,7 @@ h1 {
   font-family: sans-serif;
   font-style: italic;
   text-transform: uppercase;
+  text-align: center;
 }
 
 h1::first-letter {
