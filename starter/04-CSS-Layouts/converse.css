@@ -155,10 +155,6 @@ body {
   margin-top: 20px;
 }
 
-.container {
-  /* background-color: red; */
-}
-
 .clearfix::after {
   content: "";
   display: block;
