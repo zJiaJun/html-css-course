@@ -59,6 +59,19 @@
         align-self: stretch;
         order: -1;
       }
+
+      .f {
+        display: flex;
+      }
+      .f div {
+        border: 1px solid;
+      }
+      .zero {
+        flex-basis: 0%;
+      }
+      .auto {
+        flex-basis: auto;
+      }
     </style>
   </head>
   <body>
@@ -71,6 +84,14 @@
       <div class="el el--6">languages</div>
       <div class="el el--7">to</div>
       <div class="el el--8">learn</div>
+    </div>
+
+    <div class="f">
+      <div class="zero">This is flex-basis zero</div>
+    </div>
+
+    <div class="f">
+      <div class="auto">This is flex-basis auto</div>
     </div>
   </body>
 </html>
