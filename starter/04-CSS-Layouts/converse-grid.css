@@ -129,21 +129,17 @@ body {
   background-color: white;
 }
 
-/* flex */
-.container {
-  display: flex;
-  align-items: flex-start;
-  gap: 40px;
+/* grid */
+.product {
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr;
+  column-gap: 40px;
+  align-items: center;
+  justify-items: center;
 }
-
-.product-info {
-  flex: 1;
-  margin-top: 20px;
-}
-
-.product-details {
-  flex: 1;
-  margin-top: 20px;
+.product-title {
+  grid-column: 1 / -1;
+  justify-self: stretch;
 }
 
 .product-price {
@@ -151,4 +147,8 @@ body {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
+}
+
+.add-cart {
+  grid-column: 1 / -1;
 }
